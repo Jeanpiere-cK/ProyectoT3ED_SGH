@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ClasesHospital/ClasesHospital.csproj" Id="5d458b20-17f6-4bf9-9144-bebfd9cd56f1" />
+  <Project Path="Interfaz_grafica/Interfaz_grafica.csproj" Id="562a836e-93ec-4cc5-ab8c-93767ade86e8" />
+  <Project Path="SistemaGestionHospital/SistemaGestionHospital.csproj" Id="15194e61-d825-483b-8378-cb53425b848f" />
+</Solution>
