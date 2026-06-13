@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{562A836E-93EC-4CC5-AB8C-93767ADE86E8}</ProjectGuid>
+    <ProjectGuid>{E9538A6D-3939-4BFB-990E-E48E72771DF2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Interfaz_grafica</RootNamespace>
-    <AssemblyName>Interfaz_grafica</AssemblyName>
+    <RootNamespace>SGH_forms</RootNamespace>
+    <AssemblyName>SGH_forms</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EstadoSistema.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +66,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +80,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClasesHospital\ClasesHospital.csproj">
+      <Project>{5d458b20-17f6-4bf9-9144-bebfd9cd56f1}</Project>
+      <Name>ClasesHospital</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2026-03-30 222029.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gestion de pacientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gemini_Generated_Image_z3duc7z3duc7z3du.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historial.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,6 +16,10 @@ namespace ClasesHospital
         {
             cabeza = null;
         }
+        public NodoPaciente ObtenerCabeza()
+        {
+            return cabeza;
+        }
         //Metodos
         //Agregar Paciente
         public void AgregarPaciente(Paciente paciente)

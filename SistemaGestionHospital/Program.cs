@@ -147,7 +147,6 @@ namespace SistemaGestionHospital
                                 Console.Write("Fecha (DD/MM/AAAA hh:mm): ");
                                 DateTime fechaCita = DateTime.Parse(Console.ReadLine());
 
-                                // Pasamos 0 temporalmente, la estructura le dará el número random
                                 Cita nuevaCita = new Cita(0, pacCita, medCita, fechaCita);
                                 listaCitas.AgregarCita(nuevaCita);
 

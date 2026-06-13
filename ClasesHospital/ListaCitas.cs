@@ -23,7 +23,7 @@ namespace ClasesHospital
 
         public void AgregarCita(Cita cita)
         {
-            // Genera un código aleatorio entre 50000 y 99999 de forma automática
+            
             cita.Codigo = rnd.Next(50000, 100000);
 
             NodoCita nuevo = new NodoCita(cita);
