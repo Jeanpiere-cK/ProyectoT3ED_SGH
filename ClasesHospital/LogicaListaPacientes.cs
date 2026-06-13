@@ -8,10 +8,8 @@ namespace ClasesHospital
 {
     public class LogicaListaPacientes
     {
-        // Primer nodo de la lista
         private NodoPaciente cabeza;
 
-        // Constructor
         public LogicaListaPacientes()
         {
             cabeza = null;
@@ -20,8 +18,6 @@ namespace ClasesHospital
         {
             return cabeza;
         }
-        //Metodos
-        //Agregar Paciente
         public void AgregarPaciente(Paciente paciente)
         {
             NodoPaciente nuevo = new NodoPaciente(paciente);
@@ -42,7 +38,6 @@ namespace ClasesHospital
                 aux.Sig = nuevo;
             }
         }
-        //Buscar por DNI
         public Paciente BuscarPaciente(string dni)
         {
             NodoPaciente aux = cabeza;
@@ -59,7 +54,6 @@ namespace ClasesHospital
 
             return null;
         }
-        //MOstrar
         public void MostrarPacientes()
         {
             if (cabeza == null)
@@ -76,7 +70,6 @@ namespace ClasesHospital
                 aux = aux.Sig;
             }
         }
-        //Modificar
         public bool ModificarPaciente(string dni,string nombres,int edad,string sexo)
         {
             Paciente paciente = BuscarPaciente(dni);
@@ -90,7 +83,6 @@ namespace ClasesHospital
 
             return true;
         }
-        //Eliminar
         public bool EliminarPaciente(string dni)
         {
             if (cabeza == null) 

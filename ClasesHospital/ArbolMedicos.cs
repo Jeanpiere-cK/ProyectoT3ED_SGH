@@ -17,7 +17,7 @@ namespace ClasesHospital
 
         public NodoMedico ObtenerRaiz()
         {
-            return raiz; //retorna el nodo principal del arbol
+            return raiz;
         }
 
         public void Insertar(Medico medico)

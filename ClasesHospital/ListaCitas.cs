@@ -9,7 +9,7 @@ namespace ClasesHospital
     public class ListaCitas
     {
         private NodoCita cabeza;
-        private Random rnd = new Random(); // Generador de números aleatorios
+        private Random rnd = new Random();
 
         public ListaCitas()
         {

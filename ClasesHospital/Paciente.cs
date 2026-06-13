@@ -16,7 +16,6 @@ namespace ClasesHospital
         public string Telefono { get; set; }
         public string Sexo { get; set; }
 
-        // Lo dejamos como una variable pública normal de la clase
         public HistorialClinico Historial;
 
         public Paciente()
@@ -32,7 +31,7 @@ namespace ClasesHospital
             DNI = dni;
             Telefono = telefono;
             Sexo = sexo;
-            Historial = new HistorialClinico(); // Se inicializa la pila aquí automáticamente
+            Historial = new HistorialClinico();
         }
 
         public override string ToString()

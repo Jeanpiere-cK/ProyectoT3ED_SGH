@@ -42,7 +42,6 @@ namespace SistemaGestionHospital
                         case 1:
                             Console.Clear();
                             Console.WriteLine("--- REGISTRAR NUEVO PACIENTE ---");
-                            // Ya no pedimos el código aquí
                             Console.Write("Nombre Completo: ");
                             string nomP = Console.ReadLine();
                             Console.Write("Edad: ");
@@ -54,7 +53,7 @@ namespace SistemaGestionHospital
                             Console.Write("Sexo: ");
                             string sexP = Console.ReadLine();
 
-                            // Pasamos 0 temporalmente, la estructura se encargará de cambiarlo
+                            
                             Paciente nuevoPaciente = new Paciente(0, nomP, edadP, dniP, telP, sexP);
                             listaPacientes.AgregarPaciente(nuevoPaciente);
 
@@ -132,7 +131,6 @@ namespace SistemaGestionHospital
                         case 5:
                             Console.Clear();
                             Console.WriteLine("--- REGISTRAR CITA MÉDICA ---");
-                            // Ya no pedimos el código de la cita tampoco
 
                             Console.Write("DNI del Paciente: ");
                             string dniC = Console.ReadLine();
